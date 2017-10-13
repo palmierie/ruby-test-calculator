@@ -13,23 +13,19 @@ class TestCalculator < Minitest::Test
   end
   
   # Write test methods for subtract, multiply, and divide
+  def test_subtract
+    assert_equal 2, @calc.subtract(5,3)
+  end
   
+  def test_multiply
+    assert_equal 15, @calc.multiply(5,3)
+  end
   
-  
-  
+  def test_divide
+    assert_equal 5, @calc.divide(25,5)
+  end
 
   def teardown
     puts "tear down"
   end
-
-  
-
-end
-
-class Calculator
-
-    def add(a, b) 
-      a + b
-    end
-    
 end
